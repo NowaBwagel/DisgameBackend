@@ -4,10 +4,16 @@ import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.SQLException;
 import java.sql.Statement;
+import java.util.UUID;
+
+import com.nowabwagel.backend.MasterServer;
 
 public class Main {
 
 	public static void main(String[] args) {
+		
+		new MasterServer();
+		
 		args = new String[1];
 		args[0] = "-init";
 

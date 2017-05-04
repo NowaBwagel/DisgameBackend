@@ -1,12 +1,14 @@
 package com.nowabwagel.disbackend;
 
+import java.util.UUID;
+
 public class Util {
 
 	public static String sqlConcatStrings(String... strings) {
 		String concat = "";
 
 		for (int i = 0; i < strings.length; i++) {
-			concat += strings[i];
+			concat += "'" + strings[i] + "'";
 			// Check if another index, if so add connector
 			if ((i + 1) < strings.length) {
 				concat += ",";
@@ -16,10 +18,15 @@ public class Util {
 		return concat;
 	}
 
+	public static String getUUID() {
+		return UUID.randomUUID().toString().replace("-", "").substring(0, 24);
+	}
+
 	public static byte[] buildByteArrayFromParts(byte[]... bs) {
 		int length = 0;
-		for (int i = 0; i < bs.length; i++)
+		for (int i = 0; i < bs.length; i++) {
 			length += bs[i].length;
+		}
 
 		byte[] built = new byte[length];
 

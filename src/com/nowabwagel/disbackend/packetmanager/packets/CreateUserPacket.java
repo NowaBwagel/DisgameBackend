@@ -30,7 +30,7 @@ public class CreateUserPacket extends Packet {
 		Statement statement = null;// getManager().getBackend().g;
 
 		try {
-			ResultSet result = statement.executeQuery("SELECT user FROM login WHERE 'user' =" + username + "'");
+			ResultSet result = statement.executeQuery("SELECT user FROM login WHERE 'user' ='" + username + "'");
 			if (!result.isBeforeFirst()) {
 				return ReturnCode.LOGIN_BAD_USER;
 			}

@@ -71,25 +71,22 @@ public class MasterServer implements SocketServerListener {
 
 	@Override
 	public void clientDisconnected(SocketServer server, SocketClient client) {
-		// TODO Auto-generated method stub
 
 	}
 
 	@Override
 	public void receivedConnectionValidation(SocketServer server, SocketClient client) {
-		// TODO Auto-generated method stub
 
 	}
 
 	@Override
 	public boolean startReceivingUnreliableMessage(SocketServer server, SocketClient client, int bytes) {
-		// TODO Auto-generated method stub
+
 		return false;
 	}
 
 	@Override
 	public void receivedUnreliableMessage(SocketServer server, SocketClient client, ByteBuffer bytes) {
-		// TODO Auto-generated method stub
 
 	}
 
@@ -124,25 +121,24 @@ public class MasterServer implements SocketServerListener {
 
 	@Override
 	public boolean startReceivingFunctionCall(SocketServer server, SocketClient client, int bytes) {
-		// TODO Auto-generated method stub
+
 		return false;
 	}
 
 	@Override
 	public byte[] receivedFunctionCall(SocketServer server, SocketClient client, byte[] bytes) {
-		// TODO Auto-generated method stub
+
 		return null;
 	}
 
 	@Override
 	public boolean startReceivingLatentFunctionCall(SocketServer server, SocketClient client, int bytes) {
-		// TODO Auto-generated method stub
+
 		return false;
 	}
 
 	@Override
 	public void receivedLatentFunctionCall(SocketServer server, SocketClient client, byte[] bytes, LatentResponse response) {
-		// TODO Auto-generated method stub
 
 	}
 

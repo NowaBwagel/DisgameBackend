@@ -12,7 +12,7 @@ public class CreateUserResponse extends ResponsePacket {
 	@Override
 	public byte[] getBytes() {
 		byte[] message = new byte[1];
-		message[0] = (byte) code.getId().intValue();
+		// message[0] = (byte) code.getId().intValue();
 
 		return message;
 	}

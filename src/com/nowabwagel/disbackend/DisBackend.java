@@ -18,7 +18,7 @@ public class DisBackend {
 	public static final String REMOTE_DRONE_URL = "jdbc:h2:tcp://" + MASTER_IP + "/~/disgame";
 
 	private Connection connection;
-	
+
 	private MasterServer masterServer;
 	private DroneServer droneServer;
 
