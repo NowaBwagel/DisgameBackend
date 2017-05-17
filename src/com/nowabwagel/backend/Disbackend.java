@@ -28,9 +28,9 @@ public class Disbackend {
 			connection.createStatement().execute("DROP TABLE IF EXISTS ACTIVE_LOGINS");
 			connection.createStatement().execute("CREATE TABLE ACTIVE_LOGINS (USER_ID BIGINT NOT NULL, SESSION_KEY VARCHAR NOT NULL, CHARACTER_ID INT DEFAULT NULL, LOGIN_TIME VARCHAR)");
 			connection.createStatement().execute("DROP TABLE IF EXISTS CHARACTERS");
-			connection.createStatement().execute("CREATE TABLE CHARACTERS (CHARACTER_ID BIGINT NOT NULL AUTO_INCREMENT, OWNER_ID BIGINT, CHARACTER OTHER)");
+			connection.createStatement().execute("CREATE TABLE CHARACTERS (CHARACTER_ID BIGINT NOT NULL AUTO_INCREMENT, OWNER_ID BIGINT, CHARACTERDATA OTHER)");
 
-			new RegistrationPacket(connection, "nowabwagel", "noah.bergl@gmail.com", "FunnyFarm123").execute();
+			new RegistrationPacket(connection, "nowabwagel", "noah.bergl@gmail.com", "Test123").execute();
 		} catch (ClassNotFoundException e) {
 			e.printStackTrace();
 			System.exit(1);
